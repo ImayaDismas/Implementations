@@ -15,33 +15,51 @@
         android:layout_height="wrap_content"
         android:text="@string/enter_the_credentials" />
 
-    <EditText
-        android:id="@+id/userName"
-        android:layout_below="@+id/textView1"
-        android:layout_height="wrap_content"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:hint="@string/username">
-
-    </EditText>
-
-    <EditText
-        android:id="@+id/passWord"
-        android:inputType="textPassword"
-        android:layout_below="@+id/userName"
-        android:text=""
+        android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:hint="@string/password"
-        >
-    </EditText>
+        android:id="@+id/user_name">
 
+        <EditText
+            android:id="@+id/userName"
+            android:layout_below="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="@string/username">
+
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/user_name"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_pass">
+
+        <EditText
+            android:id="@+id/passWord"
+            android:inputType="textPassword"
+            android:text=""
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textSize="20sp"
+            >
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/btn1"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_below="@+id/passWord"
+        android:layout_below="@+id/user_pass"
+        android:layout_marginTop="20dp"
         android:text="@string/compute_sha_1_hash_of_password"
+        android:textColor="@color/white_color"
+        android:background="@drawable/roundshapedbtn"
         android:onClick="setContentView" />
 
     <Button
@@ -49,13 +67,18 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_below="@+id/btn1"
-        android:text="@string/compute_md5_hash_of_password"/>
+        android:layout_marginTop="20dp"
+        android:text="@string/compute_md5_hash_of_password"
+        android:textColor="@color/white_color"
+        android:background="@drawable/roundshapedbtn"/>
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_below="@+id/btn2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content" />
 
 
