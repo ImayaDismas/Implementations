@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hashing</string>
+    <string name="username">enter your username!</string>
+    <string name="password">enter your password!</string>
+    <string name="compute_sha_1_hash_of_password">Compute SHA-1 hash of password</string>
+    <string name="compute_md5_hash_of_password">Compute MD5 hash of password</string>
+    <string name="enter_the_credentials">Enter the credentials</string>
 </resources>
