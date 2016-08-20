@@ -2,6 +2,7 @@ package com.dismas.imaya.hashing;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -30,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         userName=(EditText)findViewById(R.id.userName);
         passWord=(EditText)findViewById(R.id.passWord);
